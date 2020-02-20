@@ -8861,6 +8861,7 @@ MonoBehaviour:
   UIGroundFilter: {fileID: 517316206}
   menuTheme: {fileID: 8300000, guid: 1588137430bfbab4b9a00ba3b220b82b, type: 3}
   consumableIcon: {fileID: 11439736, guid: 0c5f0793b82536342bd64bc3e3fdee8a, type: 3}
+  m_Character: {fileID: 0}
 --- !u!1 &878427076
 GameObject:
   m_ObjectHideFlags: 0

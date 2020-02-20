@@ -51,7 +51,7 @@ public class LoadoutState : AState
 
     Consumable.ConsumableType m_PowerupToUse = Consumable.ConsumableType.NONE;
 
-    protected GameObject m_Character;
+    public GameObject m_Character;
     protected List<int> m_OwnedAccesories = new List<int>();
     protected int m_UsedAccessory = -1;
 	protected int m_UsedPowerupIndex;
@@ -105,7 +105,7 @@ public class LoadoutState : AState
         missionPopup.gameObject.SetActive(false);
         inventoryCanvas.gameObject.SetActive(false);
 
-        if (m_Character != null) Destroy(m_Character);
+       /* if (m_Character != null) Destroy(m_Character);*/
 
         GameState gs = to as GameState;
 
@@ -268,8 +268,8 @@ public class LoadoutState : AState
 					newChar.transform.SetParent(charPosition, false);
                     newChar.transform.rotation = k_FlippedYAxisRotation;
 
-                    if (m_Character != null)
-                        Destroy(m_Character);
+                    /*if (m_Character != null)
+                        Destroy(m_Character);*/
 
                     m_Character = newChar;
                     charNameDisplay.text = c.characterName;
